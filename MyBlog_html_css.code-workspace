@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../kakao_bank"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "MyBlog_html_css"
+	}
+}
