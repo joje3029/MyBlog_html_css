@@ -40,3 +40,67 @@ footer{
 body{
     background-image: style="https://cdn.pixabay.com/photo/2015/06/24/15/45/code-820275_1280.jpg";
 }
+
+.middle{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_parent{
+    width: 250px;
+    height: 250px;
+    border: 2px solid gray;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.login_parent>button{
+    display: block;
+}
+
+input{
+    display: block;
+    margin : 10px 0;
+    padding: 5px;
+    width: 200px;
+}
+
+button{
+    width: 200px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+}
+
+.logout_parent{
+    border: 2px solid gray;
+    width: 500px;
+    padding: 15px;
+}
+
+label>input{
+    display: inline;
+    width: 10px;
+    height: 10px;
+}
+
+#select{
+    display: inline;
+    width: 10px;
+    height: 10px;
+}
+
+#select2{
+    display: inline;
+    width: 10px;
+    height: 10px;
+}
