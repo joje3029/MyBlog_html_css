@@ -20,7 +20,7 @@
                 <a href="about.html">About</a>
             </li>
             <li>
-                <a href="">Contact</a>
+                <a href="contact.html">Contact</a>
             </li>
             <li class="float_right">
                 <a href="singin.html">Sing in</a>
@@ -37,17 +37,47 @@
                 <h3 class="login">로그인</h3>
                 <input type="text" placeholder="아이디를 입력해주세요">
                 <input type="password" placeholder="비밀번호를 입력해주세요">
-                <button>로그인</button>
+                <button id="login-btn">로그인</button>
                 <div>                
                     <i class="fa-brands fa-github"></i>
                     <i class="fa-brands fa-google"></i>
                     <i class="fa-brands fa-twitter"></i>
                 </div>
             </div>
+
         </div>
     </main>
-    <footer>
-        <p>2023 My Blog. All rights reserved</p> 
-     </footer>
+    <iframe src="footer.html" width="100%" frameborder="0"></iframe>
+    <!-- <footer>
+        <p>2023 My Blog. All rights reserved.|개인정보취급방침</p>
+     </footer> -->
+     <div id="myModal" class="modal">
+        <div class="modal_content">
+        <span class="close">&times;</span>
+        <p>정말 로그인하시겠습니까?</p>
+        <button type="button" id="next">진행</button>
+        </div>
+    </div>
+    <script>
+        var modal =document.getElementById("myModal");
+        var btn = document.getElementById("login-btn");
+        var span = document.getElementsByClassName("close")[0];
+        var next = document.getElementById("next");
+        btn.onclick=function(){
+            modal.style.display="block";
+        }
+        span.onclick=function(){
+            modal.style.display="none";
+        }
+        window.onclick=function(event){
+            if(event.target==modal){
+                modal.style.display="none";
+            }
+        }
+        next.addEventListener('click',function(){
+            alert("아이디 또는 비밀번호를 확인해주세요.")
+            modal.style.display = 'none'
+        })
+    </script>
 </body>
 </html>
