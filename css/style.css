@@ -44,13 +44,18 @@ body{
     background-image: style="https://cdn.pixabay.com/photo/2015/06/24/15/45/code-820275_1280.jpg";
 }
 
-.middle{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.login_parent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logout_parent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .login_parent{
@@ -76,7 +81,7 @@ input{
     width: 200px;
 }
 
-button{
+#log_button{
     width: 200px;
     height: 40px;
     background-color: black;
@@ -146,4 +151,27 @@ iframe{
     left: 0;
     bottom: 0;
 
+}
+
+.block{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* padding: 10px 0px 0px 0px; */
+}
+#exampleInputPassword1{
+    height: 100px;
+}
+
+/* .ui green basic button{
+    width: 100px;
+    position: absolute;
+    right: 0%;
+} */
+
+.btn btn-outline-success{
+    width: 300px;
+    position: absolute;
+    right: 0%;
 }
